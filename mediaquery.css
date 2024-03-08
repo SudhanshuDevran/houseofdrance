@@ -1,0 +1,112 @@
+@media screen and (max-width: 768px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .home {
+    padding-top: 8rem;
+  }
+  .social-links-mobile {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0px;
+  }
+  .social-links{
+    display:none
+  }
+  .middle-link {
+    margin: 0px 40px;
+  }
+  .home-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-middle p {
+    text-align: center;
+  }
+  .home-middle h5 {
+    margin-top: -9px;
+  }
+  .button-flex {
+    margin-bottom: 2rem;
+  }
+  .home-window {
+    display: none;
+  }
+  .home-mobile {
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+  .right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-content {
+    margin-bottom: 0.8rem;
+  }
+  .card-content > .card1 {
+    height: 90px;
+    width: 100px;
+    padding: 0px;
+  }
+  .mobile-card1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+  .mobile-card1 > i {
+    margin-bottom: 8px;
+  }
+  .mobile-card1 > .small-text {
+    margin-top: -3px;
+  }
+  .middle-card {
+    margin: 0px 0.5rem;
+  }
+  .about-text {
+    padding: 0px 0px 0.8rem 0px;
+    text-align: justify;
+  }
+  .mobile-contact-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-contact-card>.middle-div{
+    margin:0px 2rem;
+  }
+  .email-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .email-div i {
+    margin-bottom: 0.7rem;
+  }
+  .email-subdiv > span {
+    color: #757f8a;
+  }
+  .contact-card{
+    display: none;
+  }
+
+  .hover-arrow::after {
+    margin-left: 8rem;
+    transition: margin 0.3s;
+  }
+  .hover-arrow:hover::after {
+    margin-left: 3rem;
+    transition: 0.3s ease-in-out;
+  }
+ 
+}

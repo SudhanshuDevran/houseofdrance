@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta property="og:image" content="./assets/website_front.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/d602150c0c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="assets/web-logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>ps.</title>
+  </head>
+  <body>
+    <!-- navbar  -->
+    <header class="header" id="desktop-nav">
+      <nav class="nav container" id="main_header">
+        <a href="#home"><img class="logoImg" src="./assets/logo.png" /></a>
+        <div class="nav-menu">
+          <ul>
+            <li><a class="hover-line hl1" href="#home">Home</a></li>
+            <li><a class="hover-line hl1" href="#about">About</a></li>
+            <li><a class="hover-line hl1" href="#skills">Skills</a></li>
+            <li><a class="hover-line hl1" href="#experience">Experience</a></li>
+            <li><a class="hover-line hl1" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <header class="header" id="mobile-nav">
+      <!-- mobile nav  -->
+      <nav class="nav container" id="hamburger-nav">
+        <a href="#home"><img class="logoImg" src="./assets/logo.png" /></a>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="togglemenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li>
+              <a class="hover-line" onclick="togglemenu()" href="#home">Home</a>
+            </li>
+            <li>
+              <a class="hover-line" onclick="togglemenu()" href="#about"
+                >About</a
+              >
+            </li>
+            <li>
+              <a class="hover-line" onclick="togglemenu()" href="#skills"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a class="hover-line" onclick="togglemenu()" href="#experience"
+                >Experience</a
+              >
+            </li>
+            <li>
+              <a class="hover-line" onclick="togglemenu()" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main section starts  -->
+    <main>
+      <!-- home section  -->
+
+      <section class="home" id="home">
+        <div class="home-last col-md-5 col-sm-12">
+          <div class="home-mobile home-image"></div>
+        </div>
+        <div class="home-content container row">
+          <div class="social-links col-md-2 col-sm-6">
+            <a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a> 
+          </div>
+          <div class="home-middle col-md-5 col-sm-6">
+            <h2>Sudhanshu Devran...🖐️</h2>
+            <h5>Music Producer | Audio Engineer</h5>
+            <p>
+              Hey I'm Sudhanshu Devran, I am a proeficient in creating music
+              engaging listening experiences that seamlessly blend innovation 
+              with functional excellence.
+            </p>
+            <a href="#contact" class="button button-flex"
+              >Say Hello
+              <i class="fa-regular fa-paper-plane fa-sm"></i>
+            </a>
+          </div>
+          <div class="home-window home-last col-md-5 col-sm-12">
+            <div class="home-image"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about section  -->
+
+      <section class="section about" id="about">
+        <div class="heading">
+          <h2>About Me</h2>
+          <p>Who am I</p>
+        </div>
+        <div class="container row">
+          <div class="left-image col-md-6 col-sm-12">
+            <img src="./assets/pic3.png" class="roundedd" alt="" />
+          </div>
+          <div class="right-content col-md-6 col-sm-12">
+            <div class="card-content">
+              <div class="card1">
+                <div class="mobile-card1">
+                  <i class="fa-solid fa-award fa-lg"></i>
+                  <span>Experience</span>
+                  <span class="small-text">Advanced</span>
+                </div>
+              </div>
+              <div class="card1 middle-card">
+                <div class="mobile-card1">
+                  <i class="fa-solid fa-suitcase fa-lg"></i>
+                  <span>Competence</span>
+                  <span class="small-text">Production|Mix|Master</span>
+                </div>
+              </div>
+              <div class="card1">
+                <div class="mobile-card1">
+                  <i class="fa-regular fa-circle-check fa-lg"></i>
+                  <span>Available</span>
+                  <span class="small-text">Open to Work</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-text">
+              <span>
+                As a gifted music producer, my work transcends mere composition. With a keen ear for harmonies and rhythms, I craft sonic landscapes that resonate with listeners on a profound level. Each track is meticulously crafted, every beat carefully placed to evoke a range of emotions. Through this artistry, I doesn't just create music; I creates experiences that linger in the hearts and minds of my audience, leaving an indelible mark on the industry.</span
+              >
+            </div>
+            <div class="download-cv containerr">
+              <a
+                download
+                href="assets/Resume Priyanshu Saxena.pdf"
+                class="download-btn"
+              >
+                Download CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills section  -->
+
+      <section class="section skills" id="skills">
+        <div class="heading">
+          <h2>Skills</h2>
+          <p>Technical Skills</p>
+        </div>
+
+        <div class="mobile-skill container row">
+          <!-- frontend card  -->
+          <div class="skill-card sc1 col-md-6 col-sm-12">
+            <div class="card2">
+              <div style="display:flex; justify-content: center; align-items: center;  gap: 12px;">
+                <i class="fa-solid fa-music fa-xl " style=" align-self: center;"></i>
+                <h3>Music Production</h3>
+              </div>
+              
+              <div class="skill-box" >
+                <span style="overflow: auto; text-align: right;">
+                  As a gifted music producer, my work transcends mere composition. With a keen ear for harmonies and rhythms, I craft sonic landscapes that resonate with listeners on a profound level. Each track is meticulously crafted, every beat carefully placed to evoke a range of emotions. Through this artistry, I doesn't just create music; I creates experiences that linger in the hearts and minds of my audience, leaving an indelible mark on the industry.</span
+                >
+                <!-- angular  -->
+                <!-- <div class="skill-content">
+                  <i class="fa-solid fa-angular fa-xl"></i>
+                  <div>
+                    <h3 class="skill-name">Angular</h3>
+                    <span class="skill-level"> Intermediate </span>
+                  </div>
+                </div> -->
+                <!-- bootstrap  -->
+                <!-- <div class="skill-content">
+                  <i class="fa-brands fa-bootstrap fa-xl"></i>
+                  <div>
+                    <h3 class="skill-name">Bootstrap</h3>
+                    <span class="skill-level"> Advanced </span>
+                  </div>
+                </div> -->
+                <!-- material ui  -->
+                <!-- <div class="skill-content">
+                  <i class="fa-solid fa-icons fa-xl"></i>
+                  <div>
+                    <h3 class="skill-name">MaterialUi</h3>
+                    <span class="skill-level"> Intermediate </span>
+                  </div>
+                </div> -->
+                <!-- thymeleaf  -->
+                <!-- <div class="skill-content">
+                  <i class="fa-solid fa-leaf fa-xl"></i>
+                  <div>
+                    <h3 class="skill-name">Thymeleaf</h3>
+                    <span class="skill-level"> Basic </span>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- languages card  -->
+          <div class="skill-card sc2 col-md-6 col-sm-12">
+            <div class="card2">
+              <div style="display:flex; justify-content: center; align-items: center;  gap: 12px;">
+                <i class="fa-solid fa-sliders fa-rotate-270 fa-xl" style=" align-self: center;"></i>
+                <h3>Music Production</h3>
+              </div>
+              <span style="overflow: auto; text-align: right;">
+                As a gifted music producer, his work transcends mere composition; it's a symphony of creativity, technical prowess, and emotional depth. With a keen ear for harmonies and rhythms, he crafts sonic landscapes that resonate with listeners on a profound level. His productions are a delicate balance of innovation and tradition, blending genres seamlessly to push boundaries while honoring musical heritage. Each track is meticulously crafted, every beat carefully placed to evoke a range of emotions. Through his artistry, he doesn't just create music; he creates experiences that linger in the hearts and minds of his audience, leaving an indelible mark on the industry.</span
+              >
+              <!-- <div class="skill-box">
+                <div class="skill-content">
+                  <i class="fa-brands fa-java fa-xl"></i>
+                  <div>
+                    <h3 class="skill-name">Java</h3>
+                    <span class="skill-level"> Advanced </span>
+                  </div>
+                </div>
+                <div class="skill-content">
+                  <i class="fa-brands fa-python fa-xl"></i>
+                  <div>
+                    <h3 class="skill-name">Python</h3>
+                    <span class="skill-level"> Intermediate </span>
+                  </div>
+                </div>
+                <div class="skill-content">
+                  <i class="fa-brands fa-js fa-xl"></i>
+                  <div>
+                    <h3 class="skill-name">javaScript</h3>
+                    <span class="skill-level"> Intermediate </span>
+                  </div>
+                </div>
+
+                <div class="skill-content">
+                  <i class="fa-solid fa-c fa-xl"></i>
+                  <div>
+                    <h3 class="skill-name">C</h3>
+                    <span class="skill-level"> Basic </span>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="justify-content: center;">
+          <!-- backend card  -->
+          <div class="skill-card sc3 col-md-6">
+            <div class="card2">
+              <div style="display:flex; justify-content: center; align-items: center;  gap: 12px;">
+                <img
+                    class="springboot-icon"
+                    src="./assets/dj-mixer.png"
+                    alt=""
+                  />
+                <h3>Music Production</h3>
+              </div>
+              <span style="overflow: auto; text-align: right;">
+                As a gifted music producer, his work transcends mere composition; it's a symphony of creativity, technical prowess, and emotional depth. With a keen ear for harmonies and rhythms, he crafts sonic landscapes that resonate with listeners on a profound level. His productions are a delicate balance of innovation and tradition, blending genres seamlessly to push boundaries while honoring musical heritage. Each track is meticulously crafted, every beat carefully placed to evoke a range of emotions. Through his artistry, he doesn't just create music; he creates experiences that linger in the hearts and minds of his audience, leaving an indelible mark on the industry.</span
+              >
+              <!-- <div class="skill-box"> -->
+                <!-- angular  -->
+                <!-- <div class="skill-content">
+                  <img
+                    class="springboot-icon"
+                    src="./assets/springboot.png"
+                    alt=""
+                  />
+                  <div>
+                    <h3 class="skill-name">SpringBoot</h3>
+                    <span class="skill-level"> Intermediate </span>
+                  </div> -->
+                <!-- </div> -->
+                <!-- nodejs  -->
+                <!-- <div class="skill-content">
+                  <i class="fa-brands fa-node fa-xl"></i>
+                  <div>
+                    <h3 class="skill-name">NodeJS</h3>
+                    <span class="skill-level"> Intermediate </span>
+                  </div>
+                </div> -->
+                <!-- express js  -->
+                <!-- <div class="skill-content">
+                  <img class="express-logo" src="./assets/express.png" alt="" />
+                  <div>
+                    <h3 class="skill-name">ExpressJS</h3>
+                    <span class="skill-level"> Basic </span>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+        
+        </div>
+      </section>
+
+      <section class="section experience" id="experience">
+        <div class="heading">
+          <h2>Experience</h2>
+          <p>Experience & Education</p>
+        </div>
+
+        <div class="container row">
+          <div class="experience-card1 ec1 col-md-6 col-sm-12">
+            <div class="exp-container">
+              <div class="exp-card">
+                <div class="front">
+                  <i class="fa-solid fa-user-tie fa-xl"></i>
+                  <span class="head1-element">Educational</span>
+                </div>
+                <div class="back">
+                  <div class="div">
+                    <div class="exp-title">B.Tech CSE</div>
+                    <div class="exp-place">MIT Moradabad</div>
+                    <div class="exp-subtitle">
+                      <i
+                        class="fa-regular fa-calendar-days"
+                        style="color: #757f8a"
+                      ></i
+                      >2019-2023
+                    </div>
+                  </div>
+                  <div class="div">
+                    <div class="exp-title">Intermediate</div>
+                    <div class="exp-place">DPS Moradabad</div>
+                    <div class="exp-subtitle">
+                      <i
+                        class="fa-regular fa-calendar-days"
+                        style="color: #757f8a"
+                      ></i
+                      >2018-2019
+                    </div>
+                  </div>
+                  <div>
+                    <div class="exp-title">Matriculation</div>
+                    <div class="exp-place">DPS Moradabad</div>
+                    <div class="exp-subtitle">
+                      <i
+                        class="fa-regular fa-calendar-days"
+                        style="color: #757f8a"
+                      ></i
+                      >2017-2018
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="experience-card2 ec2 col-md-6 col-sm-12">
+            <div class="exp-container">
+              <div class="exp-card">
+                <div class="front">
+                  <i class="fa-solid fa-business-time fa-xl"></i>
+                  <span class="head1-element">Professional</span>
+                </div>
+                <div class="back">
+                  <div class="div">
+                    <div class="exp-title">Associate Engineer</div>
+                    <div class="exp-place">Nagarro</div>
+                    <div class="exp-subtitle">
+                      <i
+                        class="fa-regular fa-calendar-days"
+                        style="color: #757f8a"
+                      ></i
+                      >Mar 2023-Present
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="heading">
+          <h2>Contact Me</h2>
+          <p>My Contact Details</p>
+        </div>
+
+        <div class="contact-card  container">
+          <!-- <div class="card3 cc-1">
+            <div class="contact-title ct1">
+              <i class="fa-solid fa-envelope fa-sm"></i>Email
+            </div>
+            <div class="contact-subtitle">saxenapriyansu779@gmail.com</div>
+            <a class="send-btn" href="mailto:saxenapriyanshu779@gmail.com">
+              Send Mail<i
+                class="fa-solid fa-arrow-right"
+                style="color: #757f8a"
+              ></i
+            ></a>
+          </div> -->
+          <div class="card3 margin-rl">
+            <div class="contact-title ct2">
+              <i class="fa-brands fa-whatsapp"></i>WhatsApp
+            </div>
+            <div class="contact-subtitle ">+91 6396140399</div>
+            <a class="send-btn" href="https://wa.me/916396140399?text=" target="_blank">
+              Send Msg<i
+                class="fa-solid fa-arrow-right"
+                style="color: #757f8a"
+              ></i
+            ></a>
+          </div>
+          <div class="card3 cc3">
+            <div class="contact-title ct3">
+              <i class="fa-brands fa-instagram fa-sm"></i>Instagram
+            </div>
+            <div class="contact-subtitle ">Sudhanshu Devran</div>
+            <a
+              class="send-btn"
+              href=""
+              target="_blank"
+            >
+              Connect<i
+                class="fa-solid fa-arrow-right"
+                style="color: #757f8a"
+              ></i
+            ></a>
+          </div>
+        </div>
+    
+
+        
+
+        <div class="social-links-mobile col-md-2 col-sm-6">
+          <a href="https://www.instagram.com/_priyanshuu17_?igsh=ODA1NTc5OTg5Nw==" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+          <a class="middle-link" href="https://www.linkedin.com/in/priyanshu-saxena-8ab567221/"
+          target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i
+          ></a>
+          <a href="https://wa.me/916397828700?text=" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl"></i></i></a>
+        </div>
+        <div class="visme_d" data-title="Contact Me Contact Form" data-url="01q0oo91-contact-me-contact-form" data-domain="forms" data-full-page="false" data-min-height="430px" data-form-id="7949"></div>
+
+      </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-title">
+        <a href="#home"><img class="logoImg" src="./assets/logo.png" /></a>
+      </div>
+      <div class="footer-bottom">
+        <i class="fa-regular fa-copyright fa-sm"></i> House of drance. All
+        Rights Reserved
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
