@@ -15,6 +15,7 @@ body {
   width: 100%;
   z-index: 100;
   box-shadow: inset 0px -6px 8px -7px rgba(150, 150, 150, 0.8);
+  background-color: white;
 }
 
 .logoImg {
@@ -452,7 +453,6 @@ a {
   flex-direction: column;
   justify-content: center;
   box-shadow: inset 4px 6px 11px -7px rgba(150, 150, 150, 1);
-
 }
 .exp-title i {
   margin-right: 5px;
