@@ -302,9 +302,7 @@ a {
   margin-bottom: 1.5rem;
   text-align: center;
 }
-.skill-box {
-  text-align: center;
-}
+
 .skill-content {
   display: flex;
   /* justify-content: space-between; */
