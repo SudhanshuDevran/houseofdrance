@@ -7,13 +7,14 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   scroll-behavior: smooth;
 }
 .header {
   position: fixed;
   width: 100%;
   z-index: 100;
+  box-shadow: inset 0px -6px 8px -7px rgba(150, 150, 150, 0.8);
 }
 
 .logoImg {
@@ -32,8 +33,9 @@ a {
   align-items: center;
   font-weight: 600;
   padding: 10px 0px;
-  font-family: 'Poppins', sans-serif;
-  background-color: #F8F8F8;
+  font-family: "Poppins", sans-serif;
+  /* background-color: #f8f8f8; */
+  background-color: transparent;
 }
 
 .nav-menu ul li {
@@ -41,31 +43,31 @@ a {
   list-style: none;
   margin-left: 40px;
 }
-.nav-menu ul li a:hover{
- color: grey;
+.nav-menu ul li a:hover {
+  color: grey;
 }
-.hover-line::after{
+.hover-line::after {
   content: "";
   display: block;
   width: 0%;
   background-color: grey;
   height: 2px;
-  transition: width .3s;
+  transition: width 0.3s;
 }
-.hover-line:hover::after{
+.hover-line:hover::after {
   width: 100%;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 
 /* mobile nav css  */
-#hamburger-nav{
+#hamburger-nav {
   display: none;
 }
-.hamburger-menu{
+.hamburger-menu {
   position: relative;
   display: inline-block;
 }
-.hamburger-icon{
+.hamburger-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -73,13 +75,13 @@ a {
   width: 30px;
   cursor: pointer;
 }
-.hamburger-icon span{
+.hamburger-icon span {
   width: 100%;
   height: 2px;
   background-color: black;
   transition: 0.3s all ease-in-out;
 }
-.menu-links{
+.menu-links {
   position: absolute;
   top: 100%;
   right: 0;
@@ -89,7 +91,7 @@ a {
   overflow: hidden;
   transition: 0.3s all ease-in-out;
 }
-.menu-links a{
+.menu-links a {
   display: block;
   padding: 10px;
   text-align: center;
@@ -98,32 +100,31 @@ a {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
-.menu-links li{
+.menu-links li {
   list-style: none;
 }
-.menu-links.open{
+.menu-links.open {
   max-height: 300px;
   max-width: 200px;
 }
-.hamburger-icon.open span:first-child{
-  transform: rotate(45deg) translate(10px,5px);
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
 }
-.hamburger-icon.open span:nth-child(2){
+.hamburger-icon.open span:nth-child(2) {
   opacity: 0;
 }
-.hamburger-icon.open span:last-child{
-  transform: rotate(-45deg) translate(10px,-5px);
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
 }
-.hamburger-icon span:first-child{
-  transform:none;
+.hamburger-icon span:first-child {
+  transform: none;
 }
-.hamburger-icon span:nth-child(2){
- opacity: 1;
+.hamburger-icon span:nth-child(2) {
+  opacity: 1;
 }
-.hamburger-icon span:last-child{
-  transform:none
+.hamburger-icon span:last-child {
+  transform: none;
 }
-
 
 .container {
   width: 80%;
@@ -138,7 +139,7 @@ a {
   padding-top: 74px;
   font-family: "Times New Roman", Times, serif;
 }
-.social-links-mobile{
+.social-links-mobile {
   display: none;
 }
 .social-links {
@@ -178,7 +179,7 @@ a {
 .home-middle a i {
   padding-left: 5px;
 }
-.home-mobile{
+.home-mobile {
   display: none;
 }
 
@@ -187,7 +188,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  box-shadow:  0 0 0 9px #e5ff3e5d;
+  box-shadow: 0 0 0 9px #e5ff3e5d;
   order: 1;
   justify-self: center;
   width: 300px;
@@ -252,6 +253,8 @@ a {
   padding: 1rem 1.25rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: white;
+  box-shadow: inset 4px 6px 11px -7px rgba(150, 150, 150, 1);
+  /* margin-right: 4px; */
 }
 
 .small-text {
@@ -274,7 +277,7 @@ a {
   padding: 1rem 2rem;
   border-radius: 10px;
 }
-.skill-card{
+.skill-card {
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -287,80 +290,80 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: white;
   overflow: auto;
+  box-shadow: inset 6px 6px 11px -7px rgba(150, 150, 150, 1);
 }
 .card2::-webkit-scrollbar {
   display: none;
 }
-.skill-title{
+.skill-title {
   font-size: 1.3rem;
   font-weight: 500;
   margin-bottom: 1.5rem;
   text-align: center;
 }
-.skill-box div{
-  margin-bottom: 6px;
-  
+.skill-box {
+  text-align: center;
 }
-.skill-content{
+.skill-content {
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
   column-gap: 2rem;
 }
-.skill-name{
+.skill-name {
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: -5px;
 }
-.skill-level{
+.skill-level {
   font-size: 11px;
   color: #757f8a;
 }
-.fa-bootstrap{
+.fa-bootstrap {
   height: auto;
   width: 23px;
 }
-.springboot-icon{
+.springboot-icon {
   height: 28px;
   width: 28px;
 }
-.fa-node{
+.fa-node {
   height: auto;
   width: 25px;
 }
-.express-logo{
+.express-logo {
   height: 18px;
   width: 24px;
 }
-.vscode-logo{
+.vscode-logo {
   height: 25px;
-  width: auto; 
+  width: auto;
 }
-.eclipse-logo{
+.eclipse-logo {
   height: 25px;
   width: auto;
 }
 
-.experience-head-element{
+.experience-head-element {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
-.exp-mini-element{
+.exp-mini-element {
   margin-right: 20px;
 }
-.head1{
+.head1 {
   display: flex;
-  padding: 0px 23px ;
+  padding: 0px 23px;
   justify-content: space-evenly;
   align-items: center;
   width: 220px;
 }
-.head1-element{
+.head1-element {
   font-size: 22px;
   cursor: pointer;
 }
-.exp-container{
+.exp-container {
   width: 300px;
   height: 300px;
 }
@@ -369,7 +372,7 @@ a {
   cursor: pointer;
   transform: rotateY(180deg);
 }
-.exp-card{
+.exp-card {
   height: 100%;
   width: 100%;
   position: relative;
@@ -377,7 +380,8 @@ a {
   transform-style: preserve-3d;
 }
 
-.front,.back{
+.front,
+.back {
   height: 100%;
   width: 100%;
   background-color: white;
@@ -385,19 +389,19 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
   backface-visibility: hidden;
-  
+  box-shadow: inset 4px 6px 11px -7px rgba(150, 150, 150, 1);
 }
 
-.front{
+.front {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.front>i{
+.front > i {
   margin-right: 8px;
 }
 
-.back{
+.back {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -405,31 +409,34 @@ a {
   align-items: center;
 }
 
-.exp-title{
+.exp-title {
   font-size: 19px;
   text-align: center;
   justify-content: center;
+  font-weight: 500;
 }
-.exp-place{
-  font-size: 13px;
+.exp-place {
+  font-size: 10px;
   color: #757f8a;
   text-align: center;
-  margin-top: -5px;
+  font-family: "Poppins", sans-serif;
+  line-height: 14px;
+  font-weight: 400;
 }
-.exp-subtitle{
+.exp-subtitle {
   font-size: 11px;
   color: #757f8a;
   text-align: center;
 }
-.exp-subtitle i{
+.exp-subtitle i {
   margin-right: 5px;
 }
-.experience-card1{
+.experience-card1 {
   display: flex;
   justify-content: end;
   margin-bottom: 16px;
 }
-.experience-card2{
+.experience-card2 {
   display: flex;
   justify-content: start;
 }
@@ -444,56 +451,59 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: inset 4px 6px 11px -7px rgba(150, 150, 150, 1);
+
 }
-.exp-title i{
-margin-right: 5px;
+.exp-title i {
+  margin-right: 5px;
 }
-.margin-rl{
+.margin-rl {
   margin: 0px 10px;
 }
 
-.send-btn{
+.send-btn {
   font-size: 13px;
   text-align: center;
   color: #757f8a;
 }
-.send-btn i{
+.send-btn i {
   margin-left: 3px;
 }
-.contact-card{
+.contact-card {
   display: flex;
   justify-content: center;
   /* margin-bottom: 80px; */
 }
-.contact-title{
+.contact-title {
   font-size: 18px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.contact-title i{
+.contact-title i {
   margin-right: 5px;
 }
-.contact-subtitle{
+.contact-subtitle {
   font-size: 13px;
   color: #757f8a;
   text-align: center;
   margin-bottom: 5px;
 }
-.footer{
+.footer {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 10px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: inset 0px 4px 11px -7px rgba(150, 150, 150, 1);
 }
-.footer-title{
+.footer-title {
   text-align: center;
   /* margin-bottom: 30px; */
 }
-.footer-bottom{
+.footer-bottom {
   text-align: center;
   color: #757f8a;
   font-size: 13px;

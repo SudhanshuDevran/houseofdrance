@@ -15,12 +15,22 @@
     width: 100%;
     text-align: center;
     margin: 30px 0px;
+    gap: 10px;
   }
-  .social-links{
-    display:none
+  .experience-card1 {
+    justify-content: center;
+  }
+  .ec2 {
+    justify-content: center;
+  }
+  .c2 {
+    width: 71%;
+  }
+  .social-links {
+    display: none;
   }
   .middle-link {
-    margin: 0px 40px;
+    margin: 0px 10px;
   }
   .home-middle {
     display: flex;
@@ -82,8 +92,8 @@
     justify-content: center;
     align-items: center;
   }
-  .mobile-contact-card>.middle-div{
-    margin:0px 2rem;
+  .mobile-contact-card > .middle-div {
+    margin: 0px 2rem;
   }
   .email-div {
     display: flex;
@@ -96,7 +106,7 @@
   .email-subdiv > span {
     color: #757f8a;
   }
-  .contact-card{
+  .contact-card {
     display: none;
   }
 
@@ -108,5 +118,4 @@
     margin-left: 3rem;
     transition: 0.3s ease-in-out;
   }
- 
 }
